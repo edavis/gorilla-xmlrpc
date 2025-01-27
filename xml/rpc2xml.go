@@ -136,7 +136,7 @@ func time2XML(t time.Time) string {
 			tz = fmt.Sprintf("%03d00", offset / 3600 )
 		}
 	*/
-	return fmt.Sprintf("<dateTime.iso8601>%04d%02d%02dT%02d:%02d:%02d</dateTime.iso8601>",
+	return fmt.Sprintf("<dateTime.iso8601>%04d%02d%02dT%02d:%02d:%02dZ</dateTime.iso8601>",
 		t.Year(), t.Month(), t.Day(),
 		t.Hour(), t.Minute(), t.Second())
 }
